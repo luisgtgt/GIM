@@ -1,12 +1,19 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-// Importamos las vistas directamente según tu estructura
 const routes = [
+    // 1. La ruta raíz '/' ahora carga el Login
     {
         path: '/',
+        name: 'Login',
+        component: () => import('../views/login.vue')
+    },
+    // 2. El menú de selección de grupos musculares se mueve a '/inicio'
+    {
+        path: '/inicio',
         name: 'Inicio',
         component: () => import('../views/index.vue')
     },
+    // Las demás rutas siguen igual
     {
         path: '/espalda',
         name: 'Espalda',
@@ -29,7 +36,6 @@ const routes = [
     }
 ]
 
-// Cambiamos createWebHistory() por createWebHashHistory()
 const router = createRouter({
     history: createWebHashHistory(),
     routes

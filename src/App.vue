@@ -1,18 +1,16 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <!-- Barra de navegación superior -->
-    <q-header elevated class="bg-primary text-white">
-      <q-toolbar>
-        <q-toolbar-title class="text-weight-bold">
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-    <q-page-container>
-      <router-view></router-view>
-    </q-page-container>
-  </q-layout>
+  <router-view />
 </template>
 
 <script setup>
-// La lógica global iría aquí, de momento no necesitamos nada
 </script>
+
+<style>
+/* Reseteo básico global para quitar márgenes por defecto del navegador */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #08080a;
+}
+</style>
