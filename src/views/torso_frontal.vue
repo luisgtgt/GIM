@@ -1,7 +1,7 @@
 <template>
     <div class="vista-pecho-abdomen">
 
-        <button class="btn-volver" @click="$router.push('/')">
+        <button class="btn-volver" @click="$router.push('/inicio')">
             &#8592; Volver al inicio
         </button>
 
@@ -49,7 +49,7 @@ const ejercicios = [
     },
     {
         titulo: 'Press Inclinado con Mancuernas',
-        video: 'https://www.youtube.com/embed/0GZaDVGAJ3E',
+        video: 'https://www.youtube.com/watch?v=MkMf308jXww',
         descripcion: 'Enfocado en la porción clavicular (pecho superior). Ajusta el banco a unos 30-45 grados. Las mancuernas permiten un mayor rango de movimiento y corrigen desequilibrios de fuerza entre ambos brazos.'
     },
     {

@@ -1,7 +1,7 @@
 <template>
     <div class="vista-piernas">
 
-        <button class="btn-volver" @click="$router.push('/')">
+        <button class="btn-volver" @click="$router.push('/inicio')">
             &#8592; Volver al inicio
         </button>
 
